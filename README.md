@@ -9,7 +9,7 @@ Soy Mateo Razquin, estudiante de programación de Paysandú, Uruguay. Me apasion
 ## 🌐 Sitio web
 
 Puedes ver el portfolio online en:
-[https://razquinmateo.github.io/portfolio](https://razquinmateo.github.io/portfolio)
+[https://razquinmateo.github.io](https://razquinmateo.github.io)
 
 ## 🚀 Proyectos destacados
 
