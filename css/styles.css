@@ -1,0 +1,222 @@
+/* ====================== 
+    Contenido general
+   ====================== */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.content-wrapper {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ====================== 
+    Sección de introduccion
+   ====================== */
+.intro {
+  width: 100vw;
+  height: 90vh;
+  background-color: #0f1217;
+  background-image:
+    linear-gradient(to right, rgba(15, 18, 23, 0.95) 5%, rgba(15, 18, 23, 0.3) 70%, rgba(15, 18, 23, 0.1) 100%),
+    url('../img/img-header.png');
+  background-repeat: no-repeat;
+  background-size: 1000px auto;
+  background-position: right center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 0;
+  overflow: hidden;
+}
+
+.intro .content-wrapper {
+  width: 100%;
+}
+
+.intro h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  line-height: 1.6;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro {
+    background-position: center top;
+    background-size: cover;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .intro-inner {
+    max-width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+}
+
+/* ====================== 
+    Sección de proyectos
+   ====================== */
+.proyectos {
+  background-color: #181818;
+}
+
+.proyectos h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.card {
+  border: none;
+  transition: none;
+}
+
+.card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 180px;
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card-img-wrapper:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.img-gradient-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%; 
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #212529 100%);
+  pointer-events: none;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.card a i:hover {
+  color: #58a6ff;
+}
+
+/* ====================== 
+    Modal para la imagen
+   ====================== */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal .modal-content {
+  max-width: 70vw;     
+  max-height: 70vh;    
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  animation: zoomIn 0.3s ease;
+  cursor: pointer;     
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.6); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.image-modal .close-modal {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1051;
+}
+
+/* ====================== 
+    Footer
+   ====================== */
+.footer {
+  background-color: #0f1217;
+  color: #ffffff;
+  font-size: 0.95rem;
+  border-top: 1px solid #222;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #58a6ff;
+}
+
+

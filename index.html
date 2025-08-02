@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mateo Razquin | Portfolio</title>
+
+    <!-- Estilos y librerías -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <main class="main">
+      <!-- Header / Intro -->
+      <section class="intro d-flex align-items-center">
+        <div class="content-wrapper text-light px-3">
+          <h1>Bienvenido</h1>
+          <p>
+            Mi nombre es Mateo Razquin, soy un estudiante de programación que
+            vive en Paysandú, Uruguay. Me gusta diseñar páginas web limpias y
+            elegantes que sean agradables para los usuarios.
+          </p>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+      <section class="proyectos py-5">
+        <div class="content-wrapper">
+          <h2 class="text-center mb-5">Mis proyectos</h2>
+
+          <div class="row justify-content-center g-4">
+            <!-- Proyecto 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card bg-dark text-light h-100 shadow-sm">
+                <div class="card-img-wrapper position-relative">
+                  <img
+                    src="img/laloservicios.PNG"
+                    class="card-img-top"
+                    alt="Lalo Servicios"
+                  />
+                  <div class="img-gradient-bottom"></div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title d-flex align-items-center gap-2">
+                    <i class="bi bi-tools text-warning"></i> Lalo Servicios
+                  </h5>
+                  <p class="card-text">
+                    Sitio web para venta y alquiler de maquinaria de
+                    construcción, usando HTML, CSS, JS, Bootstrap y SweetAlert2.
+                  </p>
+                  <div class="mt-auto d-flex justify-content-start gap-3">
+                    <a
+                      href="https://tu-repo.github.io/lalo-servicios/"
+                      target="_blank"
+                      class="text-info fs-5"
+                      title="Ver sitio"
+                    >
+                      <i class="bi bi-globe2"></i>
+                    </a>
+                    <a
+                      href="https://github.com/razquinmateo/LaloServicios"
+                      target="_blank"
+                      class="text-light fs-5"
+                      title="Ver código en GitHub"
+                    >
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card bg-dark text-light h-100 shadow-sm">
+                <div class="card-img-wrapper position-relative">
+                  <img
+                    src="img/stockify.PNG"
+                    class="card-img-top"
+                    alt="Stockify"
+                  />
+                  <div class="img-gradient-bottom"></div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title d-flex align-items-center gap-2">
+                    <i class="bi bi-box-seam text-primary"></i> Stockify
+                  </h5>
+                  <p class="card-text">
+                    Sitio web multiplataforma, moderno y responsive creado para
+                    solucionar la problemática del control de stock de una
+                    estación de servicio Ancap. <br />
+                    Tecnologías destacadas: Angular y Springboot.
+                  </p>
+                  <div class="mt-auto d-flex justify-content-start gap-3">
+                    <a
+                      href="https://github.com/razquinmateo/Stockify"
+                      target="_blank"
+                      class="text-light fs-5"
+                      title="Ver código en GitHub"
+                    >
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card bg-dark text-light h-100 shadow-sm">
+                <div class="card-img-wrapper position-relative">
+                  <img
+                    src="img/sudoku.PNG"
+                    class="card-img-top"
+                    alt="Sudoku!"
+                  />
+                  <div class="img-gradient-bottom"></div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title d-flex align-items-center gap-2">
+                    <i class="bi bi-grid-3x3-gap-fill text-danger"></i> Sudoku!
+                  </h5>
+                  <p class="card-text">
+                    Aplicación web para jugar al Sudoku, con un diseño limpio y
+                    moderno. Utiliza HTML, CSS, JS y Bootstrap.
+                  </p>
+                  <div class="mt-auto d-flex justify-content-start gap-3">
+                    <a
+                      href="https://tu-repo.github.io/sudoku-web/"
+                      target="_blank"
+                      class="text-info fs-5"
+                      title="Ver sitio"
+                    >
+                      <i class="bi bi-globe2"></i>
+                    </a>
+                    <a
+                      href="https://github.com/razquinmateo/Sudoku-Web"
+                      target="_blank"
+                      class="text-light fs-5"
+                      title="Ver código en GitHub"
+                    >
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card bg-dark text-light h-100 shadow-sm">
+                <div class="card-img-wrapper position-relative">
+                  <img
+                    src="img/pokeapiv2.PNG"
+                    class="card-img-top"
+                    alt="PokeApi V2"
+                  />
+                  <div class="img-gradient-bottom"></div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title d-flex align-items-center gap-2">
+                    <i class="bi bi-controller text-success"></i> PokeApi V2
+                  </h5>
+                  <p class="card-text">
+                    Aplicación web que consume la popular PokeAPI, mostrando
+                    información de Pokémones, habilidades y tipos. Además
+                    permite buscar Pokémon por nombre, filtrar por tipos o
+                    generación y una sección de favoritos.
+                  </p>
+                  <div class="mt-auto d-flex justify-content-start gap-3">
+                    <a
+                      href="https://tu-repo.github.io/poke-api-v2/"
+                      target="_blank"
+                      class="text-info fs-5"
+                      title="Ver sitio"
+                    >
+                      <i class="bi bi-globe2"></i>
+                    </a>
+                    <a
+                      href="https://github.com/razquinmateo/PokeApi-V2"
+                      target="_blank"
+                      class="text-light fs-5"
+                      title="Ver código en GitHub"
+                    >
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card bg-dark text-light h-100 shadow-sm">
+                <div class="card-img-wrapper position-relative">
+                  <img
+                    src="img/tmdb-api.PNG"
+                    class="card-img-top"
+                    alt="TMDB API"
+                  />
+                  <div class="img-gradient-bottom"></div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title d-flex align-items-center gap-2">
+                    <i class="bi bi-film text-info"></i> TMDB API
+                  </h5>
+                  <p class="card-text">
+                    Aplicación web que consume la API de The Movie Database
+                    (TMDb) para mostrar películas populares, buscarlas por
+                    nombre o género, y ver detalles completos en múltiples
+                    idiomas. Desarrollada con React, Tailwind y React Router.
+                  </p>
+                  <div class="mt-auto d-flex justify-content-start gap-3">
+                    <a
+                      href="https://tu-repo.github.io/poke-api-v2/"
+                      target="_blank"
+                      class="text-info fs-5"
+                      title="Ver sitio"
+                    >
+                      <i class="bi bi-globe2"></i>
+                    </a>
+                    <a
+                      href="https://github.com/razquinmateo/TMDB-Api"
+                      target="_blank"
+                      class="text-light fs-5"
+                      title="Ver código en GitHub"
+                    >
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer py-4">
+        <div
+          class="content-wrapper d-flex justify-content-between align-items-center"
+        >
+          <span>&copy; 2025 Mateo Razquin</span>
+          <div class="footer-icons d-flex gap-3">
+            <a
+              href="mailto:razquinmateo@gmail.com"
+              class="text-light fs-5"
+              title="Email"
+            >
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a
+              href="https://wa.me/59899490663"
+              target="_blank"
+              class="text-success fs-5"
+              title="WhatsApp"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a
+              href="https://github.com/razquinmateo"
+              target="_blank"
+              class="text-light fs-5"
+              title="GitHub"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Modal de imagen -->
+    <div id="imageModal" class="image-modal">
+      <img class="modal-content" id="modalImg" alt="Vista ampliada" />
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
