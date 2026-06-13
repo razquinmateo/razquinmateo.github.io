@@ -20,29 +20,151 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
 
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+      <div class="content-wrapper d-flex justify-content-between align-items-center w-100">
+        <a class="navbar-brand fw-bold" href="#">MR</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-lg-3 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a
+                href="https://www.linkedin.com/in/mateo-razquin-a906763a7/"
+                target="_blank"
+                class="nav-link p-0 fs-5"
+                title="LinkedIn"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a
+                href="https://github.com/razquinmateo"
+                target="_blank"
+                class="nav-link p-0 fs-5"
+                title="GitHub"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <main class="main">
       <!-- Header / Intro -->
-      <section class="intro d-flex align-items-center">
+      <section id="inicio" class="intro d-flex align-items-center">
         <div class="content-wrapper text-light px-3">
-          <h1>Bienvenido</h1>
-          <p>
+          <h1 data-aos="fade-right">Bienvenido</h1>
+          <p data-aos="fade-right" data-aos-delay="300">
             Mi nombre es Mateo Razquin y soy estudiante de programación. Me apasiona crear soluciones eficientes y bien diseñadas, enfocadas en brindar una experiencia clara y agradable al usuario.
           </p>
+          <div class="mt-4 cv-container" data-aos="fade-up" data-aos-delay="600">
+            <a href="cv-mateo-razquin.pdf" target="_blank" download class="btn btn-outline-info btn-lg px-4 fw-bold">
+              <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar CV
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Habilidades -->
+      <section id="habilidades" class="skills py-5">
+        <div class="content-wrapper">
+          <h2 class="text-center mb-5" data-aos="fade-up">Habilidades Técnicas</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-4 text-center">
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+              <i class="devicon-html5-plain colored fs-1"></i>
+              <p class="mt-2">HTML5</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+              <i class="devicon-css3-plain colored fs-1"></i>
+              <p class="mt-2">CSS3</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+              <i class="devicon-javascript-plain colored fs-1"></i>
+              <p class="mt-2">JavaScript</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+              <i class="devicon-bootstrap-plain colored fs-1"></i>
+              <p class="mt-2">Bootstrap</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+              <i class="devicon-angularjs-plain colored fs-1"></i>
+              <p class="mt-2">Angular</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
+              <i class="devicon-spring-plain colored fs-1"></i>
+              <p class="mt-2">Spring Boot</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="700">
+              <i class="devicon-react-original colored fs-1"></i>
+              <p class="mt-2">React</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="800">
+              <i class="devicon-tailwindcss-original colored fs-1"></i>
+              <p class="mt-2">Tailwind</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="900">
+              <i class="devicon-laravel-original colored fs-1"></i>
+              <p class="mt-2">Laravel</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="1000">
+              <i class="devicon-vuejs-plain colored fs-1"></i>
+              <p class="mt-2">Vue.js</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="1100">
+              <i class="devicon-docker-plain colored fs-1"></i>
+              <p class="mt-2">Docker</p>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="1200">
+              <i class="devicon-git-plain colored fs-1"></i>
+              <p class="mt-2">Git</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Proyectos -->
-      <section class="proyectos py-5">
+      <section id="proyectos" class="proyectos py-5">
         <div class="content-wrapper">
-          <h2 class="text-center mb-5">Mis proyectos</h2>
+          <h2 class="text-center mb-5" data-aos="fade-up">Mis proyectos</h2>
 
           <div class="row justify-content-center g-4">
             <!-- Proyecto 1 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
               <div class="card bg-dark text-light h-100 shadow-sm">
                 <div class="card-img-wrapper position-relative">
                   <img
@@ -84,7 +206,7 @@
             </div>
 
             <!-- Proyecto 2 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
               <div class="card bg-dark text-light h-100 shadow-sm">
                 <div class="card-img-wrapper position-relative">
                   <img
@@ -120,7 +242,7 @@
             </div>
 
             <!-- Proyecto 3 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
               <div class="card bg-dark text-light h-100 shadow-sm">
                 <div class="card-img-wrapper position-relative">
                   <img
@@ -162,7 +284,7 @@
             </div>
 
             <!-- Proyecto 4 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
               <div class="card bg-dark text-light h-100 shadow-sm">
                 <div class="card-img-wrapper position-relative">
                   <img
@@ -206,7 +328,7 @@
             </div>
 
             <!-- Proyecto 5 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
               <div class="card bg-dark text-light h-100 shadow-sm">
                 <div class="card-img-wrapper position-relative">
                   <img
@@ -242,7 +364,7 @@
             </div>
 
             <!-- Proyecto 6 -->
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
               <div class="card bg-dark text-light h-100 shadow-sm">
                 <div class="card-img-wrapper position-relative">
                   <img
@@ -286,6 +408,35 @@
         </div>
       </section>
 
+      <!-- Contacto -->
+      <section id="contacto" class="contacto py-5">
+        <div class="content-wrapper">
+          <h2 class="text-center mb-5" data-aos="fade-up">Contacto</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6" data-aos="zoom-in">
+              <div class="contact-card p-4 rounded shadow">
+                <p class="text-center mb-4 text-light">¿Tienes una propuesta o alguna pregunta? ¡Escríbeme!</p>
+                <form action="https://formspree.io/f/mykabqno" method="POST">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" name="name" class="form-control text-light" id="name" placeholder="Tu nombre" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" name="email" class="form-control text-light" id="email" placeholder="nombre@ejemplo.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea name="message" class="form-control text-light" id="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-info w-100 fw-bold">Enviar Mensaje</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Footer -->
       <footer class="footer py-4">
         <div
@@ -299,6 +450,14 @@
               title="Email"
             >
               <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mateo-razquin-a906763a7/"
+              target="_blank"
+              class="text-light fs-5"
+              title="LinkedIn"
+            >
+              <i class="bi bi-linkedin"></i>
             </a>
             <a
               href="https://github.com/razquinmateo"
@@ -318,6 +477,14 @@
       <img class="modal-content" id="modalImg" alt="Vista ampliada" />
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,6 +1,11 @@
 /* ====================== 
     Contenido general
    ====================== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* Para que la navbar fija no tape los títulos */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +22,31 @@ body {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ====================== 
+    Navbar
+   ====================== */
+.navbar {
+  background-color: rgba(15, 18, 23, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #333;
+  padding: 0.8rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #ccc !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #58a6ff !important;
 }
 
 /* ====================== 
@@ -68,6 +98,27 @@ body {
   animation-delay: 0.3s;
 }
 
+.cv-container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.btn-outline-info {
+  border-width: 2px;
+  transition: all 0.3s ease;
+  color: #0dcaf0 !important;
+  border-color: #0dcaf0 !important;
+}
+
+.btn-outline-info:hover {
+  background-color: #0dcaf0 !important;
+  color: #fff !important;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(13, 202, 240, 0.4);
+}
+
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -98,6 +149,39 @@ body {
 }
 
 /* ====================== 
+    Sección de habilidades
+   ====================== */
+.skills {
+  background-color: #121212;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.skill-item {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+}
+
+.skill-item i {
+  display: block;
+}
+
+.skill-item p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ====================== 
     Sección de proyectos
    ====================== */
 .proyectos {
@@ -114,12 +198,9 @@ body {
 
 .card {
   border: none;
-  transition: none;
-}
-
-.card:hover {
-  transform: none;
-  box-shadow: none;
+  background-color: #212529 !important;
+  color: #fff !important;
+  transition: transform 0.3s ease;
 }
 
 .card-img-wrapper {
@@ -161,6 +242,55 @@ body {
 
 .card a i:hover {
   color: #58a6ff;
+}
+
+/* ====================== 
+    Sección de contacto
+   ====================== */
+.contacto {
+  background-color: #121212;
+}
+
+.contacto h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.contact-card {
+  background-color: #181818;
+  border: 1px solid #333;
+}
+
+.contact-card .form-label {
+  color: #ccc;
+}
+
+.contact-card .form-control {
+  background-color: #212529;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.contact-card .form-control:focus {
+  background-color: #2b3035;
+  border-color: #0dcaf0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.25);
+  color: #fff;
+}
+
+.contact-card .btn-info {
+  background-color: #0dcaf0;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.contact-card .btn-info:hover {
+  background-color: #0baccc;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 202, 240, 0.3);
 }
 
 /* ====================== 
